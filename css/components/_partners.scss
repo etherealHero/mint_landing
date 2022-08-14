@@ -1,0 +1,11 @@
+.partners {
+   background-color: #f6f6f6;
+   padding: 66px 0;
+
+   &__inner {
+      display: grid;
+      grid-template-columns: repeat(6, min-content);
+      place-content: space-between;
+      align-items: center;
+   }
+}

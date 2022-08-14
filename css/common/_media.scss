@@ -1,0 +1,317 @@
+@import "variables";
+
+@media screen and (max-width: $xl) {
+   .header {
+      &__title {
+         font-size: 54px;
+      }
+   }
+}
+
+@media screen and (max-width: $lg) {
+   .btn {
+      padding: 9px 20px;
+   }
+
+   .header {
+
+      &__title {
+         font-size: 44px;
+         line-height: 48px;
+      }
+
+      &__subtitle {
+         line-height: 20px;
+         margin: 10px 0;
+      }
+
+      &__main {
+         margin-top: 7px;
+      }
+   }
+
+   .section {
+      margin: 50px 0;
+
+      &__header {
+         &-title {
+            font-size: 44px;
+         }
+
+         &-text {
+            margin-top: 12px;
+         }
+      }
+
+      &-blog {
+         padding: 50px 0;
+      }
+   }
+
+   .work {
+      gap: 18px;
+
+      &__item:first-child {
+         margin-bottom: 18px;
+      }
+   }
+
+   .about {
+      margin: 0;
+
+      &__item {
+         margin-bottom: 40px;
+      }
+   }
+
+   .article {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (max-width: $md) {
+   .header {
+      margin-top: 100px;
+
+      &__title {
+         font-size: 27px;
+         line-height: 28px;
+      }
+
+      &__subtitle {
+         line-height: 15px;
+      }
+   }
+
+   .btn-burger {
+      display: block;
+   }
+
+   .menu {
+      &.active {
+         height: 160px;
+
+         .menu__item {
+            display: block;
+         }
+      }
+
+      display: block;
+      height: 0px;
+      position: absolute;
+      top: 100%;
+      left: -12px;
+      width: calc(100% + 24px);
+      background-color: #fff;
+      box-shadow: 0 10px 10px rgba(#000, .2);
+
+      &__item {
+         margin: 0 0 20px;
+         text-align: center;
+         display: none;
+      }
+   }
+
+   .section {
+      margin: 40px 0;
+
+      &__header {
+         margin-bottom: 30px;
+
+         &-title {
+            font-size: 27px;
+            line-height: 28px;
+         }
+
+         &-text {
+            line-height: 20px;
+         }
+      }
+   }
+
+   .portfolio {
+      &-btn {
+         margin-top: 40px;
+      }
+
+      &__item-flex {
+         display: block;
+
+      }
+      
+      .order {
+         margin-top: 22px;
+      }
+   }
+
+   .work {
+      gap: 10px;
+      margin-top: 30px;
+
+      &__item {
+         height: 300px;
+
+         &-short {
+            height: 150px;
+         }
+
+         &:first-child {
+            margin-bottom: 10px;
+         }
+
+         &-title {
+            font-size: 16px;
+         }
+      }
+   }
+
+   .partners {
+      padding: 40px 0;
+
+      &__inner {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: repeat(2, 110px);
+         justify-items: center;
+         gap: 15px;
+      }
+   }
+
+   .about {
+      &__item:last-child {
+         padding: 0 22px 0;
+         height: 350px;
+      }
+
+      &__text {
+         margin: 16px 0;
+      }
+   }
+
+   .article {
+      grid-template-columns: 440px;
+      justify-content: center;
+   }
+
+   .contact {
+      &__main {
+         display: block;
+      }
+
+      &__item {
+         width: 100%;
+
+         &-title {
+            text-align: center;
+         }
+
+         form {
+            padding: 0 20px;
+            margin-bottom: 40px;
+
+            .btn {
+               display: block;
+               margin: 0 auto;
+            }
+         }
+      }
+   }
+
+   .footer {
+      padding: 10px 0;
+   }
+}
+
+@media screen and (max-width: $sm) {
+   .header {
+      &__main {
+         display: block;
+      } 
+
+      &__item {
+         width: 100%;
+
+         &:nth-child(1) {
+            padding: 0 0 28px;
+         }
+      }
+
+      &__title {
+         font-size: 42px;
+         line-height: 52px;
+      }
+
+      &__subtitle {
+         line-height: 25px;
+      }
+   }
+
+   .work {
+      display: block;
+      margin-top: 30px;
+
+      &__item {
+         height: 300px;
+         margin-bottom: 20px;
+
+         &:first-child {
+            margin-bottom: 20px;
+         }
+
+         &-short {
+            height: 220px;
+            margin-bottom: 20px;
+         }
+
+
+         &-title {
+            font-size: 26px;
+         }
+      }
+   }
+
+   .filter {
+      &__item {
+         margin-bottom: 20px;
+      }
+   }
+
+   .portfolio .order {
+      margin-top: 0;
+   }
+
+   .partners {
+      &__inner {
+         gap: 20px;
+      }
+
+      &__img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   .article {
+      grid-template-columns: 1fr;
+   }
+
+   .contact {
+      &__flex {
+         display: block;
+
+         &-item {
+            margin-bottom: 25px;
+         }
+      }
+
+      &__icon {
+         margin-bottom: 6px;
+      }
+   }
+
+   .social {
+      margin-top: 34px;
+   }
+}
+
